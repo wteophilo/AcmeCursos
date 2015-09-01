@@ -170,9 +170,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\EstudanteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProfessorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,7 +182,17 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CursoRemoto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\EstudanteRemoto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProfessorRemoto\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -208,13 +220,43 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Service References\CursoRemoto\AcmeCursos.CursoRemoto.Curso.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\CursoRemoto\CursoService.disco" />
+    <None Include="Service References\CursoRemoto\configuration91.svcinfo" />
+    <None Include="Service References\CursoRemoto\configuration.svcinfo" />
+    <None Include="Service References\CursoRemoto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\EstudanteRemoto\AcmeCursos.EstudanteRemoto.Estudante.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\CursoRemoto\CursoService.wsdl" />
+    <None Include="Service References\CursoRemoto\CursoService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CursoRemoto\CursoService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CursoRemoto\CursoService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\EstudanteRemoto\EstudanteService.disco" />
     <None Include="Service References\EstudanteRemoto\configuration91.svcinfo" />
     <None Include="Service References\EstudanteRemoto\configuration.svcinfo" />
     <None Include="Service References\EstudanteRemoto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\ProfessorRemoto\AcmeCursos.ProfessorRemoto.Professor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ProfessorRemoto\ProfessorService.disco" />
+    <None Include="Service References\ProfessorRemoto\configuration91.svcinfo" />
+    <None Include="Service References\ProfessorRemoto\configuration.svcinfo" />
+    <None Include="Service References\ProfessorRemoto\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -267,6 +309,26 @@
     <None Include="Service References\EstudanteRemoto\EstudanteService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Curso\Create.cshtml" />
+    <Content Include="Views\Curso\Delete.cshtml" />
+    <Content Include="Views\Curso\Details.cshtml" />
+    <Content Include="Views\Curso\Edit.cshtml" />
+    <Content Include="Views\Curso\Index.cshtml" />
+    <Content Include="Views\Professor\Create.cshtml" />
+    <Content Include="Views\Professor\Delete.cshtml" />
+    <Content Include="Views\Professor\Details.cshtml" />
+    <Content Include="Views\Professor\Edit.cshtml" />
+    <Content Include="Views\Professor\Index.cshtml" />
+    <None Include="Service References\ProfessorRemoto\ProfessorService.wsdl" />
+    <None Include="Service References\ProfessorRemoto\ProfessorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfessorRemoto\ProfessorService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProfessorRemoto\ProfessorService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -283,7 +345,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CursoRemoto\" />
     <WCFMetadataStorage Include="Service References\EstudanteRemoto\" />
+    <WCFMetadataStorage Include="Service References\ProfessorRemoto\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

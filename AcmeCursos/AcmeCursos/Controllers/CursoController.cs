@@ -7,77 +7,76 @@ using System.Web.Mvc;
 
 namespace AcmeCursos.Controllers
 {
-    public class EstudanteController : Controller
+    public class CursoController : Controller
     {
-        //private EstudanteRemoto.IEstudanteService service = new EstudanteRemoto.EstudanteServiceClient();
-        private EstudanteRemoto.IEstudanteService service = new EstudanteRemoto.EstudanteServiceClient();
-        //// GET: Estudante
+        private CursoRemoto.ICursoService service = new CursoRemoto.CursoServiceClient();
+
+        // GET: Curso
         public ActionResult Index()
         {
-            var lista = service.listaEstudante();
-            return View(lista);
+            return View();
         }
 
-        // GET: Estudante/Details/5
+        // GET: Curso/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EstudanteRemoto.Estudante estudante = service.detalhe(id);
-            if (estudante == null)
+            CursoRemoto.Curso curso = service.detalhe(id);
+            if (curso == null)
             {
                 return HttpNotFound();
             }
-            return View(estudante);
+            return View(curso);
         }
 
-        // GET: Estudante/Create
+        // GET: Curso/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Estudante/Create
+        // POST: Curso/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(EstudanteRemoto.Estudante estudante)
+        public ActionResult Create(CursoRemoto.Curso curso)
         {
             if (ModelState.IsValid)
             {
-                service.adiciona(estudante);
+                service.adiciona(curso);
                 return RedirectToAction("Index");
             }
 
-            return View(estudante);
+            return View(curso);
         }
 
-        // GET: Estudante/Edit/5
+        // GET: Curso/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Estudante/Edit/5
+        // POST: Curso/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, EstudanteRemoto.Estudante estudante)
+        public ActionResult Edit(int id, CursoRemoto.Curso curso)
         {
             if (ModelState.IsValid)
             {
-                service.atualiza(estudante);
+                service.atualiza(curso);
                 return RedirectToAction("Index");
             }
-            return View(estudante);
+            return View(curso);
         }
 
-        // GET: Estudante/Delete/5
+        // GET: Curso/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // GET: Estudantes/Delete/5
+        // POST: Curso/Delete/5
+        [HttpPost]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -85,13 +84,13 @@ namespace AcmeCursos.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             //Estudante estudante = db.Estudantes.Find(id);
-            EstudanteRemoto.Estudante estudante = service.procura(id);
-            service.remove(estudante);
-            if (estudante == null)
+            CursoRemoto.Curso curso = service.procura(id);
+            service.remove(curso);
+            if (curso == null)
             {
                 return HttpNotFound();
             }
-            return View(estudante);
+            return View(curso);
         }
 
         // POST: Estudantes/Delete/5
@@ -99,8 +98,8 @@ namespace AcmeCursos.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            EstudanteRemoto.Estudante estudante = service.procura(id);
-            service.remove(estudante);
+            CursoRemoto.Curso curso = service.procura(id);
+            service.remove(curso);
             return RedirectToAction("Index");
         }
     }

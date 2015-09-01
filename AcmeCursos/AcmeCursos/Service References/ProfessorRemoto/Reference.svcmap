@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b4ee3c70-d006-4c9c-9f2a-08fe79fb73c7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://wt-acmeservice.azurewebsites.net/ProfessorService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProfessorService.wsdl" MetadataType="Wsdl" ID="5be8a4ad-375d-4f25-90fe-f613889db751" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/ProfessorService.svc?wsdl" />
+    <MetadataFile FileName="ProfessorService.xsd" MetadataType="Schema" ID="8bf4966b-8636-454e-8854-d8decc2c3896" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/ProfessorService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProfessorService1.xsd" MetadataType="Schema" ID="2f24b3c2-2864-471f-aa56-3153750d5921" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/ProfessorService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProfessorService.disco" MetadataType="Disco" ID="1171c830-616e-4461-bfc7-734cc76040d4" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/ProfessorService.svc?disco" />
+    <MetadataFile FileName="ProfessorService2.xsd" MetadataType="Schema" ID="1e8df632-cf0b-4916-adbe-fefa0002876e" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/ProfessorService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
