@@ -173,6 +173,7 @@
     <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\EstudanteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InscricaoController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProfessorController.cs" />
     <Compile Include="Global.asax.cs">
@@ -188,6 +189,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\EstudanteRemoto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InscricaoRemoto\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -208,6 +214,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\wt-acmecursos.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -250,9 +257,29 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Service References\InscricaoRemoto\AcmeCursos.InscricaoRemoto.Inscricao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\InscricaoRemoto\InscricaoService.disco" />
+    <None Include="Service References\InscricaoRemoto\configuration91.svcinfo" />
+    <None Include="Service References\InscricaoRemoto\configuration.svcinfo" />
+    <None Include="Service References\InscricaoRemoto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\ProfessorRemoto\AcmeCursos.ProfessorRemoto.Professor.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\InscricaoRemoto\InscricaoService.wsdl" />
+    <None Include="Service References\InscricaoRemoto\InscricaoService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InscricaoRemoto\InscricaoService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InscricaoRemoto\InscricaoService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ProfessorRemoto\ProfessorService.disco" />
     <None Include="Service References\ProfessorRemoto\configuration91.svcinfo" />
     <None Include="Service References\ProfessorRemoto\configuration.svcinfo" />
@@ -329,6 +356,8 @@
     <None Include="Service References\ProfessorRemoto\ProfessorService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Inscricao\cadastrarEstudante.cshtml" />
+    <Content Include="Views\Shared\Sucesso.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -347,6 +376,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\CursoRemoto\" />
     <WCFMetadataStorage Include="Service References\EstudanteRemoto\" />
+    <WCFMetadataStorage Include="Service References\InscricaoRemoto\" />
     <WCFMetadataStorage Include="Service References\ProfessorRemoto\" />
   </ItemGroup>
   <PropertyGroup>
