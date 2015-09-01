@@ -14,7 +14,8 @@ namespace AcmeCursos.Controllers
         // GET: Curso
         public ActionResult Index()
         {
-            return View();
+            var lista = service.lista();
+            return View(lista);
         }
 
         // GET: Curso/Details/5
