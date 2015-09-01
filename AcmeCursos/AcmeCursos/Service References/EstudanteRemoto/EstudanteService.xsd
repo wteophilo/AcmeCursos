@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model" />
+  <xs:element name="adiciona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AcmeService.Model" minOccurs="0" name="estudante" nillable="true" type="q1:Estudante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="adicionaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="remove">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/AcmeService.Model" minOccurs="0" name="estudante" nillable="true" type="q2:Estudante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="atualiza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/AcmeService.Model" minOccurs="0" name="estudante" nillable="true" type="q3:Estudante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="atualizaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="procura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idestudante" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="procuraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/AcmeService.Model" minOccurs="0" name="procuraResult" nillable="true" type="q4:Estudante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaEstudante">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaEstudanteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/AcmeService.Model" minOccurs="0" name="listaEstudanteResult" nillable="true" type="q5:ArrayOfEstudante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detalhe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idEstudante" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detalheResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/AcmeService.Model" minOccurs="0" name="detalheResult" nillable="true" type="q6:Estudante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
