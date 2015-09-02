@@ -243,9 +243,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Service References\EstudanteRemoto\AcmeCursos.EstudanteRemoto.Estudante.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <None Include="Service References\CursoRemoto\CursoService.wsdl" />
     <None Include="Service References\CursoRemoto\CursoService.xsd">
       <SubType>Designer</SubType>
@@ -256,18 +253,12 @@
     <None Include="Service References\CursoRemoto\CursoService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\EstudanteRemoto\AcmeCursos.EstudanteRemoto.AppDBContext.datasource">
+    <Content Include="Service References\EstudanteRemoto\AcmeCursos.EstudanteRemoto.Estudante.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\EstudanteRemoto\EstudanteService.disco" />
     <None Include="Service References\EstudanteRemoto\configuration91.svcinfo" />
     <None Include="Service References\EstudanteRemoto\configuration.svcinfo" />
-    <None Include="Service References\EstudanteRemoto\EstudanteService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\EstudanteRemoto\EstudanteService31.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\EstudanteRemoto\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -275,6 +266,16 @@
     <Content Include="Service References\InscricaoRemoto\AcmeCursos.InscricaoRemoto.Inscricao.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\EstudanteRemoto\EstudanteService.wsdl" />
+    <None Include="Service References\EstudanteRemoto\EstudanteService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstudanteRemoto\EstudanteService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstudanteRemoto\EstudanteService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\InscricaoRemoto\InscricaoService.disco" />
     <None Include="Service References\InscricaoRemoto\configuration91.svcinfo" />
     <None Include="Service References\InscricaoRemoto\configuration.svcinfo" />
@@ -361,16 +362,6 @@
     <Content Include="Views\Estudante\Details.cshtml" />
     <Content Include="Views\Estudante\Edit.cshtml" />
     <Content Include="Views\Estudante\Index.cshtml" />
-    <None Include="Service References\EstudanteRemoto\EstudanteService.wsdl" />
-    <None Include="Service References\EstudanteRemoto\EstudanteService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\EstudanteRemoto\EstudanteService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\EstudanteRemoto\EstudanteService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="Views\Curso\Create.cshtml" />
     <Content Include="Views\Curso\Delete.cshtml" />
     <Content Include="Views\Curso\Details.cshtml" />

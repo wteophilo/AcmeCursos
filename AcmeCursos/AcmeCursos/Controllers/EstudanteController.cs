@@ -54,9 +54,18 @@ namespace AcmeCursos.Controllers
         }
 
         // GET: Estudante/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            EstudanteRemoto.Estudante estudante = service.detalhe(id);
+            if (estudante == null)
+            {
+                return HttpNotFound();
+            }
+            return View(estudante);
         }
 
         // POST: Estudante/Edit/5

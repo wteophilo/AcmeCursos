@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cb40bedb-2542-4c6e-997f-5168106be761" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6420fdab-cdb3-4cc0-9056-fd4761d6d88b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="EstudanteService.xsd" MetadataType="Schema" ID="68d8f629-319a-4210-b16e-d888ca60acb1" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?xsd=xsd0" />
-    <MetadataFile FileName="EstudanteService.disco" MetadataType="Disco" ID="719f7e9b-2af8-4178-a294-3fb61ead39b7" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?disco" />
-    <MetadataFile FileName="EstudanteService1.xsd" MetadataType="Schema" ID="1cbbf137-0b34-4f69-a803-719310e9cd5e" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?xsd=xsd1" />
-    <MetadataFile FileName="EstudanteService2.xsd" MetadataType="Schema" ID="cacae3d9-b9cd-4172-b5cb-5c3954a7e4e6" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?xsd=xsd2" />
-    <MetadataFile FileName="EstudanteService.wsdl" MetadataType="Wsdl" ID="056bb7f9-0f77-4401-8af3-6cfa7396a72d" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?wsdl" />
+    <MetadataFile FileName="EstudanteService.xsd" MetadataType="Schema" ID="60832b44-baa7-47e5-bb00-cf6f226d513a" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EstudanteService.disco" MetadataType="Disco" ID="9d7d58d4-54c6-41f3-82d8-efa43a71be6f" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?disco" />
+    <MetadataFile FileName="EstudanteService1.xsd" MetadataType="Schema" ID="cd45f5a0-0a2a-4cff-966a-48c27c2d6457" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EstudanteService2.xsd" MetadataType="Schema" ID="8844a299-bcc2-47eb-8b86-03e79177b081" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EstudanteService.wsdl" MetadataType="Wsdl" ID="9f1718f6-a159-4030-99c6-f556c205b79e" SourceId="1" SourceUrl="http://wt-acmeservice.azurewebsites.net/EstudanteService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
