@@ -256,9 +256,18 @@
     <None Include="Service References\CursoRemoto\CursoService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Service References\EstudanteRemoto\AcmeCursos.EstudanteRemoto.AppDBContext.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\EstudanteRemoto\EstudanteService.disco" />
     <None Include="Service References\EstudanteRemoto\configuration91.svcinfo" />
     <None Include="Service References\EstudanteRemoto\configuration.svcinfo" />
+    <None Include="Service References\EstudanteRemoto\EstudanteService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstudanteRemoto\EstudanteService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\EstudanteRemoto\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -385,6 +394,9 @@
     <Content Include="Views\Inscricao\cadastrarEstudante.cshtml" />
     <Content Include="Views\Shared\Sucesso.cshtml" />
     <Content Include="Views\Leciona\cadastrarAula.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\_Inscricoes.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\_Cursos.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\_Professores.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

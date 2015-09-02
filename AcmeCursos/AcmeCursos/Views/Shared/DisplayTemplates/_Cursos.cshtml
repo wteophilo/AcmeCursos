@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<AcmeCursos.LecionaRemoto.ProfessorCurso>
+<table class="table">
+
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.curso.nome)</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.curso.nome)</td>
+        </tr>
+    }
+
+
+</table>

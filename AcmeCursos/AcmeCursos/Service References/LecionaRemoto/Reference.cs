@@ -15,7 +15,7 @@ namespace AcmeCursos.LecionaRemoto {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ProfessorCurso", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ProfessorCurso", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model", IsReference=true)]
     [System.SerializableAttribute()]
     public partial class ProfessorCurso : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -124,7 +124,7 @@ namespace AcmeCursos.LecionaRemoto {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Curso", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Curso", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model", IsReference=true)]
     [System.SerializableAttribute()]
     public partial class Curso : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -249,7 +249,7 @@ namespace AcmeCursos.LecionaRemoto {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Professor", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Professor", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model", IsReference=true)]
     [System.SerializableAttribute()]
     public partial class Professor : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -358,7 +358,7 @@ namespace AcmeCursos.LecionaRemoto {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Inscricao", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Inscricao", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model", IsReference=true)]
     [System.SerializableAttribute()]
     public partial class Inscricao : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -483,7 +483,7 @@ namespace AcmeCursos.LecionaRemoto {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Estudante", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Estudante", Namespace="http://schemas.datacontract.org/2004/07/AcmeService.Model", IsReference=true)]
     [System.SerializableAttribute()]
     public partial class Estudante : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         

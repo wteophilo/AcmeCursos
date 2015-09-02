@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AcmeService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AcmeService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/AcmeService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AcmeService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://wt-acmeservice.azurewebsites.net/CursoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:complexType name="Curso">
     <xs:sequence>
       <xs:element minOccurs="0" name="dataLimiteInscricao" type="xs:dateTime" />
@@ -9,6 +10,8 @@
       <xs:element minOccurs="0" name="leciona" nillable="true" type="tns:ArrayOfProfessorCurso" />
       <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
     </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
   </xs:complexType>
   <xs:element name="Curso" nillable="true" type="tns:Curso" />
   <xs:complexType name="ArrayOfInscricao">
@@ -26,6 +29,8 @@
       <xs:element minOccurs="0" name="estudanteId" type="xs:int" />
       <xs:element minOccurs="0" name="id" type="xs:int" />
     </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
   </xs:complexType>
   <xs:element name="Inscricao" nillable="true" type="tns:Inscricao" />
   <xs:complexType name="Estudante">
@@ -36,6 +41,8 @@
       <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="sobrenome" nillable="true" type="xs:string" />
     </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
   </xs:complexType>
   <xs:element name="Estudante" nillable="true" type="tns:Estudante" />
   <xs:complexType name="ArrayOfProfessorCurso">
@@ -52,6 +59,8 @@
       <xs:element minOccurs="0" name="professor" nillable="true" type="tns:Professor" />
       <xs:element minOccurs="0" name="professorId" type="xs:int" />
     </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
   </xs:complexType>
   <xs:element name="ProfessorCurso" nillable="true" type="tns:ProfessorCurso" />
   <xs:complexType name="Professor">
@@ -62,6 +71,8 @@
       <xs:element minOccurs="0" name="sobrenome" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="titulacao" nillable="true" type="xs:string" />
     </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
   </xs:complexType>
   <xs:element name="Professor" nillable="true" type="tns:Professor" />
   <xs:complexType name="ArrayOfCurso">
