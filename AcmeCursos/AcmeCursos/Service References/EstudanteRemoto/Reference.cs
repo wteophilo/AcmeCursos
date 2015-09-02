@@ -613,22 +613,22 @@ namespace AcmeCursos.EstudanteRemoto {
         System.Threading.Tasks.Task atualizaAsync(AcmeCursos.EstudanteRemoto.Estudante estudante);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/procura", ReplyAction="http://tempuri.org/IEstudanteService/procuraResponse")]
-        AcmeCursos.EstudanteRemoto.Estudante procura(System.Nullable<int> idestudante);
+        AcmeCursos.EstudanteRemoto.Estudante procura(System.Nullable<int> id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/procura", ReplyAction="http://tempuri.org/IEstudanteService/procuraResponse")]
-        System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> procuraAsync(System.Nullable<int> idestudante);
+        System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> procuraAsync(System.Nullable<int> id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/listaEstudante", ReplyAction="http://tempuri.org/IEstudanteService/listaEstudanteResponse")]
-        AcmeCursos.EstudanteRemoto.Estudante[] listaEstudante();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/lista", ReplyAction="http://tempuri.org/IEstudanteService/listaResponse")]
+        AcmeCursos.EstudanteRemoto.Estudante[] lista();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/listaEstudante", ReplyAction="http://tempuri.org/IEstudanteService/listaEstudanteResponse")]
-        System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante[]> listaEstudanteAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/detalhe", ReplyAction="http://tempuri.org/IEstudanteService/detalheResponse")]
-        AcmeCursos.EstudanteRemoto.Estudante detalhe(System.Nullable<int> idEstudante);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/lista", ReplyAction="http://tempuri.org/IEstudanteService/listaResponse")]
+        System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante[]> listaAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/detalhe", ReplyAction="http://tempuri.org/IEstudanteService/detalheResponse")]
-        System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> detalheAsync(System.Nullable<int> idEstudante);
+        AcmeCursos.EstudanteRemoto.Estudante detalhe(System.Nullable<int> id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstudanteService/detalhe", ReplyAction="http://tempuri.org/IEstudanteService/detalheResponse")]
+        System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> detalheAsync(System.Nullable<int> id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -682,28 +682,28 @@ namespace AcmeCursos.EstudanteRemoto {
             return base.Channel.atualizaAsync(estudante);
         }
         
-        public AcmeCursos.EstudanteRemoto.Estudante procura(System.Nullable<int> idestudante) {
-            return base.Channel.procura(idestudante);
+        public AcmeCursos.EstudanteRemoto.Estudante procura(System.Nullable<int> id) {
+            return base.Channel.procura(id);
         }
         
-        public System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> procuraAsync(System.Nullable<int> idestudante) {
-            return base.Channel.procuraAsync(idestudante);
+        public System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> procuraAsync(System.Nullable<int> id) {
+            return base.Channel.procuraAsync(id);
         }
         
-        public AcmeCursos.EstudanteRemoto.Estudante[] listaEstudante() {
-            return base.Channel.listaEstudante();
+        public AcmeCursos.EstudanteRemoto.Estudante[] lista() {
+            return base.Channel.lista();
         }
         
-        public System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante[]> listaEstudanteAsync() {
-            return base.Channel.listaEstudanteAsync();
+        public System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante[]> listaAsync() {
+            return base.Channel.listaAsync();
         }
         
-        public AcmeCursos.EstudanteRemoto.Estudante detalhe(System.Nullable<int> idEstudante) {
-            return base.Channel.detalhe(idEstudante);
+        public AcmeCursos.EstudanteRemoto.Estudante detalhe(System.Nullable<int> id) {
+            return base.Channel.detalhe(id);
         }
         
-        public System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> detalheAsync(System.Nullable<int> idEstudante) {
-            return base.Channel.detalheAsync(idEstudante);
+        public System.Threading.Tasks.Task<AcmeCursos.EstudanteRemoto.Estudante> detalheAsync(System.Nullable<int> id) {
+            return base.Channel.detalheAsync(id);
         }
     }
 }

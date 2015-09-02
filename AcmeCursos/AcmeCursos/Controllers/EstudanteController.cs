@@ -14,7 +14,7 @@ namespace AcmeCursos.Controllers
         //// GET: Estudante
         public ActionResult Index()
         {
-            var lista = service.listaEstudante();
+            var lista = service.lista();
             return View(lista);
         }
 
@@ -71,12 +71,6 @@ namespace AcmeCursos.Controllers
             return View(estudante);
         }
 
-        // GET: Estudante/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
         // GET: Estudantes/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -97,7 +91,7 @@ namespace AcmeCursos.Controllers
         // POST: Estudantes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(int? id)
         {
             EstudanteRemoto.Estudante estudante = service.procura(id);
             service.remove(estudante);

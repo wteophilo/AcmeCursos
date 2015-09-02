@@ -14,7 +14,7 @@ namespace AcmeCursos.Controllers
 
         public ActionResult cadastrarEstudante()
         {
-            var estudantes = estudanteService.listaEstudante();
+            var estudantes = estudanteService.lista();
             var cursos = cursoService.lista();
 
         List<SelectListItem> selectEstudantes = estudantes.Select(e => new SelectListItem()
@@ -23,14 +23,14 @@ namespace AcmeCursos.Controllers
             Value = e.id.ToString()
         }).ToList();
 
-        List<SelectListItem> selecrCusos = cursos.Select(c => new SelectListItem()
+        List<SelectListItem> selectCursos = cursos.Select(c => new SelectListItem()
         {
             Text = c.nome,
             Value = c.id.ToString()
         }).ToList();
 
         ViewBag.estudanteId = selectEstudantes;
-        ViewBag.cursosId = selecrCusos;
+        ViewBag.cursoId = selectCursos;
 
         return View();
     }

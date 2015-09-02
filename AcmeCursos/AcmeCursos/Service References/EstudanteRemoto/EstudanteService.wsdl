@@ -56,11 +56,11 @@
   <wsdl:message name="IEstudanteService_procura_OutputMessage">
     <wsdl:part name="parameters" element="tns:procuraResponse" />
   </wsdl:message>
-  <wsdl:message name="IEstudanteService_listaEstudante_InputMessage">
-    <wsdl:part name="parameters" element="tns:listaEstudante" />
+  <wsdl:message name="IEstudanteService_lista_InputMessage">
+    <wsdl:part name="parameters" element="tns:lista" />
   </wsdl:message>
-  <wsdl:message name="IEstudanteService_listaEstudante_OutputMessage">
-    <wsdl:part name="parameters" element="tns:listaEstudanteResponse" />
+  <wsdl:message name="IEstudanteService_lista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listaResponse" />
   </wsdl:message>
   <wsdl:message name="IEstudanteService_detalhe_InputMessage">
     <wsdl:part name="parameters" element="tns:detalhe" />
@@ -85,9 +85,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IEstudanteService/procura" message="tns:IEstudanteService_procura_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IEstudanteService/procuraResponse" message="tns:IEstudanteService_procura_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="listaEstudante">
-      <wsdl:input wsaw:Action="http://tempuri.org/IEstudanteService/listaEstudante" message="tns:IEstudanteService_listaEstudante_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IEstudanteService/listaEstudanteResponse" message="tns:IEstudanteService_listaEstudante_OutputMessage" />
+    <wsdl:operation name="lista">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEstudanteService/lista" message="tns:IEstudanteService_lista_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEstudanteService/listaResponse" message="tns:IEstudanteService_lista_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="detalhe">
       <wsdl:input wsaw:Action="http://tempuri.org/IEstudanteService/detalhe" message="tns:IEstudanteService_detalhe_InputMessage" />
@@ -132,8 +132,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="listaEstudante">
-      <soap:operation soapAction="http://tempuri.org/IEstudanteService/listaEstudante" style="document" />
+    <wsdl:operation name="lista">
+      <soap:operation soapAction="http://tempuri.org/IEstudanteService/lista" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -190,8 +190,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="listaEstudante">
-      <soap:operation soapAction="http://tempuri.org/IEstudanteService/listaEstudante" style="document" />
+    <wsdl:operation name="lista">
+      <soap:operation soapAction="http://tempuri.org/IEstudanteService/lista" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

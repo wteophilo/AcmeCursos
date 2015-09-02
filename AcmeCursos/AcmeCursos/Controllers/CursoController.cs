@@ -53,9 +53,18 @@ namespace AcmeCursos.Controllers
         }
 
         // GET: Curso/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CursoRemoto.Curso cursos =service.procura(id);
+            if (cursos == null)
+            {
+                return HttpNotFound();
+            }
+            return View(cursos);
         }
 
         // POST: Curso/Edit/5
@@ -71,30 +80,21 @@ namespace AcmeCursos.Controllers
         }
 
         // GET: Curso/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Curso/Delete/5
-        [HttpPost]
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            //Estudante estudante = db.Estudantes.Find(id);
-            CursoRemoto.Curso curso = service.procura(id);
-            service.remove(curso);
-            if (curso == null)
+            CursoRemoto.Curso cursos = service.procura(id);
+            if (cursos == null)
             {
                 return HttpNotFound();
             }
-            return View(curso);
+            return View(cursos);
         }
 
-        // POST: Estudantes/Delete/5
+              // POST: Estudantes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
